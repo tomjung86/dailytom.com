@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>dailyTOM</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+</head>
+<body>
+  <header>
+    <img src="img/dailyTOM.svg" alt="dailyTOM logo" />
+    <div class="nav-buttons">
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <img src="img/dailyTOM.svg" alt="dailyTOM logo large" class="main-logo">
+    <h1>Your smarter workflow starts here.</h1>
+    <p><strong>Cut through the noise.</strong> Organise ideas, manage tasks, and move from thinking to doing — faster, clearer, and with less friction.</p>
+    <p class="coming-soon">🚧 Coming soon – stay tuned.</p>
+  </div>
+
+  <footer>
+    © 2025 <span class="light">daily</span><strong>TOM</strong>™ — Built by Tom J. Schorel ·
+    <a href="https://www.tomschorel.com" target="_blank">tomschorel.com</a>
+  </footer>
+
+  <div class="contact-modal" id="contactModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="text" name="website" id="website" autocomplete="off" style="display:none;" />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="scripts/modal.js"></script>
+  <script src="scripts/contact.js"></script>
+</body>
+</html>
