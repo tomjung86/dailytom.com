@@ -41,6 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (modal.classList.contains('modal-fade-out')) {
         modal.style.display = 'none';
         modal.classList.remove('modal-fade-out');
+
+        // 🛠️ Reset zoom or transform in case they were affected
+        document.body.style.transform = 'none';
+        document.body.style.zoom = '100%';
+        document.documentElement.style.transform = 'none';
+        document.documentElement.style.zoom = '100%';
       }
     }, { once: true });
   }
